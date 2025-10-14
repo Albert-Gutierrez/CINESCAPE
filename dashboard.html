@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINESCAPE - Dashboard</title>
+
+    <!-- Enlaza tus estilos -->
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+
+<body>
+
+    <!-- Simulación temporal del header -->
+    <header class="header">
+        <div class="user-info">
+            <img src="assets/img/user.png" alt="Usuario" class="user-photo">
+            <span class="welcome-text">Bienvenida <strong>Isabella</strong></span>
+        </div>
+
+        <button id="btnMenu" class="menu-btn">
+            <img src="assets/img/menu.png" alt="Menú">
+        </button>
+    </header>
+
+    <!-- Contenido temporal (solo para que veas el modal después) -->
+    <main class="contenido">
+        <h2>Catálogo de Películas</h2>
+        <button id="abrirModal" class="btn-prueba">Abrir Modal (Prueba)</button>
+    </main>
+
+    <!-- ============ TU PARTE ============ -->
+
+    <!-- MENÚ DESPLEGABLE LATERAL -->
+    <nav id="menuLateral" class="menu-lateral">
+        <div class="menu-contenido">
+            <h3>Menú Principal</h3>
+            <ul class="menu-opciones">
+                <li><a href="#" data-categoria="inicio">Inicio</a></li>
+                <li><a href="#" data-categoria="aventura">Aventuras</a></li>
+                <li><a href="#" data-categoria="animadas">Animadas</a></li>
+                <li><a href="#" data-categoria="drama">Drama</a></li>
+                <li><a href="#" data-categoria="comedia">Comedia</a></li>
+                <li><a href="#" data-categoria="ficcion">Ficción</a></li>
+                <li><a href="#" data-categoria="superheroes">Super Héroes</a></li>
+            </ul>
+
+            <div class="menu-secundario">
+                <a href="#">Mi Cuenta</a>
+                <a href="index.html" class="cerrar-sesion">Cerrar Sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODAL DETALLE DE PELÍCULA -->
+    <section id="modalPelicula" class="modal-pelicula">
+        <div class="modal-contenido">
+            <button class="cerrar-modal" id="cerrarModal">✕</button>
+
+            <div class="modal-header">
+                <img src="assets/caratulas/the-night-fury.jpg" alt="The Night Fury" class="modal-imagen">
+            </div>
+
+            <div class="modal-body">
+                <h2>The Night Fury</h2>
+                <p class="categoria">Acción - 2025</p>
+                <p class="sinopsis">
+                    En un mundo donde los dragones son solo leyendas, una criatura alada resurge con una furia
+                    imparable.
+                    Una joven con un misterioso vínculo con el animal deberá enfrentarse a fuerzas humanas y mágicas
+                    para
+                    evitar una catástrofe global.
+                </p>
+                <p class="reparto">
+                    <strong>Reparto:</strong> Mason Thames, Gerard Butler, Nico Parker
+                </p>
+                <button class="btn-ver">VER PELÍCULA ▶</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/modal.js"></script>
+
+</body>
+
+</html>
