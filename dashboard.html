@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINESCAPE - Dashboard</title>
+    <title>CINESCAPE menu-modal Alberth</title>
 
-    <!-- Enlaza tus estilos -->
-     <link rel="stylesheet" href="assets/css/dashboard.css">
+   
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+  
+   <!-- Enlaza tus estilos -->
+     <link rel="stylesheet" href="assets/css/dashboard.css">
+
 </head>
 
 <body>
 
-    <!-- Simulación temporal del header -->
+    <!-- HEADER -->
     <header class="header">
         <div class="user-info">
             <img src="assets/img/user.png" alt="Usuario" class="user-photo">
@@ -26,15 +29,13 @@
         </button>
     </header>
 
-    <!-- Contenido temporal (solo para que veas el modal después) -->
-    <main class="contenido">
-        <h2>Catálogo de Películas</h2>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="demo">
+        <h2>Demo de Menú y Modal</h2>
         <button id="abrirModal" class="btn-prueba">Abrir Modal (Prueba)</button>
     </main>
 
-    <!-- ============ TU PARTE ============ -->
-
-    <!-- MENÚ DESPLEGABLE LATERAL -->
+    <!-- MENÚ LATERAl-->
     <nav id="menuLateral" class="menu-lateral">
         <div class="menu-contenido">
             <h3>Menú Principal</h3>
@@ -59,34 +60,46 @@
     <!-- <section id="modalPelicula" class="modal-pelicula">
         <div class="modal-contenido">
             <button class="cerrar-modal" id="cerrarModal">✕</button>
-
             <div class="modal-header">
-                <img src="assets/caratulas/the-night-fury.jpg" alt="The Night Fury" class="modal-imagen">
+                <img src="assets/caratulas/the_night_fury.jpg" alt="The Night Fury" class="modal-imagen">
             </div>
-
             <div class="modal-body">
                 <h2>The Night Fury</h2>
                 <p class="categoria">Acción - 2025</p>
+                <hr>
                 <p class="sinopsis">
                     En un mundo donde los dragones son solo leyendas, una criatura alada resurge con una furia
                     imparable.
                     Una joven con un misterioso vínculo con el animal deberá enfrentarse a fuerzas humanas y mágicas
-                    para
-                    evitar una catástrofe global.
+                    para evitar una catástrofe global.
                 </p>
-                <p class="reparto">
-                    <strong>Reparto:</strong> Mason Thames, Gerard Butler, Nico Parker
-                </p>
+                <p class="reparto"><strong>Reparto:</strong></p>
+                <p class="aores">Mason Thames, Gerard Butler, Nico Parker</p>
                 <button class="btn-ver">VER PELÍCULA ▶</button>
             </div>
         </div>
     </section> -->
 
-    <!-- Scripts -->
-     <script src="assets/js/dashboard.js"></script>
+   
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/modal.js"></script>
+   <!-- Scripts -->
+     <script src="assets/js/dashboard.js"></script>
 
+    <script>
+        // Simular apertura del modal desde el botón de prueba
+        document.getElementById("abrirModal").addEventListener("click", () => {
+            openModal({
+                nombre: "The Night Fury",
+                categoria: "Acción",
+                año: "2025",
+                sinopsis:
+                    "En un mundo donde los dragones son solo leyendas, una criatura alada resurge con una furia imparable. Una joven con un misterioso vínculo con el animal deberá enfrentarse a fuerzas humanas y mágicas para evitar una catástrofe global.",
+                reparto: "Mason Thames, Gerard Butler, Nico Parker",
+                caratula: "the-night-fury.jpg"
+            });
+        });
+    </script>
 </body>
 
 </html>
