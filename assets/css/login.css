@@ -1,0 +1,174 @@
+/* ===========================
+   CONFIGURACIÓN GENERAL
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+
+  background-color: #111111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 58vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ===========================
+   IMÁGENES PRINCIPALES
+=========================== */
+.imagenes {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.imagenes img {
+  width: 140%;
+  margin-left: -85px;
+  border-radius: 10px;
+  transform: rotate(-8deg);
+}
+
+/* ===========================
+   ANIMACIONES DE IMÁGENES
+=========================== */
+.img3 {
+  transform: rotate(-6deg);
+  margin-top: -120px;
+
+}
+.img2 {
+  transform: rotate(-6deg);
+  margin-top: -125px;
+}
+.img1 {
+  transform: rotate(-6deg);
+}
+
+@media (width: 430px) and (height: 932px) {
+  .imagenes {
+    max-width: 350px;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .form {
+    padding: 20px 25px;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+  }
+}
+/* ===========================
+   LOGO Y TEXTOS SUPERIORES
+=========================== */
+.logo {
+  text-align: center;
+  margin-top: -250px;
+}
+
+.logo img {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.logo p {
+  color: #d0d0d0;
+  font-size: 18px;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+/* ===========================
+   CONTENEDOR DEL FORMULARIO
+=========================== */
+.form {
+  margin-top: 25px;
+  padding: 0px 35px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 360px;
+}
+
+/* ===========================
+   FORMULARIO INTERNO
+=========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* =======================
+   INPUTS CON BORDE DEGRADADO
+======================= */
+input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 15px;
+  border-radius: 25px;
+  background-color: #0e0e0e;
+  color: #fff;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(#0e0e0e, #0e0e0e),
+    linear-gradient(180deg, #00bfff91, #7b2ff573);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 12px rgba(122, 47, 245, 0.6);
+  transform: scale(1.02);
+}
+
+input::placeholder {
+  color: #bfbfbf;
+}
+
+/* =======================
+   BOTÓN DEGRADADO
+======================= */
+button {
+  margin-top: 25px;
+  padding: 12px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00bfff, #7a2ff5);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(122, 47, 245, 0.6);
+}
+
+
