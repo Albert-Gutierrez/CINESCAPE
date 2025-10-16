@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINESCAPE - Dashboard</title>
-
-    <!-- Enlaza tus estilos -->
-     <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>CINESCAPE</title>
+    <!-- Estilos de las diferentes secciones -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+
+    <!-- Enlaza tus estilos -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+
 </head>
 
 <body>
 
-    <!-- Simulación temporal del header -->
+    <!-- HEADER -->
     <header class="header">
         <div class="user-info">
             <img src="assets/img/user.png" alt="Usuario" class="user-photo">
@@ -24,17 +28,10 @@
         <button id="btnMenu" class="menu-btn">
             <img src="assets/img/menu.png" alt="Menú">
         </button>
+
     </header>
 
-    <!-- Contenido temporal (solo para que veas el modal después) -->
-    <main class="contenido">
-        <h2>Catálogo de Películas</h2>
-        <button id="abrirModal" class="btn-prueba">Abrir Modal (Prueba)</button>
-    </main>
-
-    <!-- ============ TU PARTE ============ -->
-
-    <!-- MENÚ DESPLEGABLE LATERAL -->
+    <!-- MENÚ LATERAl-->
     <nav id="menuLateral" class="menu-lateral">
         <div class="menu-contenido">
             <h3>Menú Principal</h3>
@@ -60,32 +57,70 @@
         <div class="modal-contenido">
             <button class="cerrar-modal" id="cerrarModal">✕</button>
 
-            <div class="modal-header">
-                <img src="assets/caratulas/the-night-fury.jpg" alt="The Night Fury" class="modal-imagen">
-            </div>
+    <main>
+        <hr>
+        <!-- barra de busqueda -->
+        <h2 class="titulo-busqueda">Encuentra tu pelicula favorita</h2>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Encuentra tu película favorita">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <img src="assets/img/search.png" alt="buscar">
+        </div>
 
-            <div class="modal-body">
-                <h2>The Night Fury</h2>
-                <p class="categoria">Acción - 2025</p>
-                <p class="sinopsis">
-                    En un mundo donde los dragones son solo leyendas, una criatura alada resurge con una furia
-                    imparable.
-                    Una joven con un misterioso vínculo con el animal deberá enfrentarse a fuerzas humanas y mágicas
-                    para
-                    evitar una catástrofe global.
-                </p>
-                <p class="reparto">
-                    <strong>Reparto:</strong> Mason Thames, Gerard Butler, Nico Parker
-                </p>
-                <button class="btn-ver">VER PELÍCULA ▶</button>
+        <div id="cont-peliculas">
+            <div class="pelicula">
+                <!-- Aca van cargadas las peliculas con js -->
+                <!-- <img src="assets/caratulas/mission_impossible.jpg" alt="mision imposible">
+                <div class="pelicula-info">
+                    <h3>Mision imposible Dead reckoning</h3>
+                    <p>2023</p>
+                </div> -->
             </div>
         </div>
-    </section>
 
-    <!-- Scripts -->
-     <script src="assets/js/dashboard.js"></script>
+
+
+        <!--MODAL DE PELÍCULA-->
+        <section id="modalPelicula" class="modal-pelicula">
+            <div class="modal-contenido" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                
+                <button class="cerrar-modal" id="cerrarModal" aria-label="Cerrar modal">✕</button>
+
+                <div class="modal-header">
+                    <img src="" alt="Carátula película" class="modal-imagen">
+                </div>
+
+                <div class="modal-body">
+                    <h2 id="modalTitle"></h2>
+                    <p class="categoria"></p>
+                    <hr>
+                    <p class="sinopsis"></p>
+
+                    <p class="actores">Reparto</p>
+                    <p class="reparto"></p>
+
+                    <button class="btn-ver">VER PELÍCULA ▶</button>
+                </div>
+            </div>
+            <div class="overlay-cerrar" aria-hidden="true"></div>
+
+    </main>
+
+
+    <footer>
+        <nav class="categorias">
+            <button class="categoria" data-categoria="Acción">Acción</button>
+            <button class="categoria" data-categoria="Romance">Romance</button>
+            <button class="categoria" data-categoria="Terror">Terror</button>
+        </nav>
+    </footer>
+
+
+
+    <!-- Scripts-->
     <script src="assets/js/menu.js"></script>
-    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+
 
 </body>
 
