@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".header");
     const modal = document.getElementById("modalPelicula");
     const cerrarModal = document.getElementById("cerrarModal");
-    const menuButton = document.getElementById("btnMenu");
-    const sidebar = document.getElementById("menuLateral");
 
     let peliculas = [];
 
@@ -43,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         lista.forEach(p => {
             const card = document.createElement("div");
-            card.classList.add("pelicula"); // coincide con tu CSS
-            // usa la ruta EXACTA del JSON (ruta_caratula ya contiene "caratulas/xxx.jpg")
+            card.classList.add("pelicula");
+        
             card.innerHTML = `
                 <img src="assets/${p.ruta_caratula}" alt="${p.nombre}">
                 <div class="pelicula-info">
@@ -57,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // BÚSQUEDA (coincidencia parcial)
+    // BÚSQUEDA
     if (searchInput) {
         searchInput.addEventListener("input", e => {
             const texto = e.target.value.trim().toLowerCase();
