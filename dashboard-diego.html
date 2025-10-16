@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Películas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- ===== MENÚ LATERAL ===== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Menú</h2>
+            <button id="closeMenu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul>
+            <li><i class="fa-solid fa-house"></i> Inicio</li>
+            <li><i class="fa-solid fa-film"></i> Películas</li>
+            <li><i class="fa-solid fa-heart"></i> Favoritos</li>
+            <li><i class="fa-solid fa-gear"></i> Configuración</li>
+            <li><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</li>
+        </ul>
+    </aside>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <div class="main-content">
+        <header class="header">
+           <a href="perfil.html" class="user-link">
+                <div class="user-info">
+                        <img src="img/image-removebg-preview 1@2x.png" alt="Usuario" class="avatar">
+                    <div>
+                        <h2>Bienvenido</h2>
+                        <p>Alejo</p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="menu-icon" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
+        </header>
+
+        <main>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Encuentra tu película favorita">
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <section id="peliculasContainer" class="peliculas-grid">
+                <!-- Las películas se cargan dinámicamente desde JSON -->
+            </section>
+        </main>
+
+        <footer>
+            <nav class="categorias">
+                <button class="categoria" data-categoria="Acción">Acción</button>
+                <button class="categoria" data-categoria="Romance">Romance</button>
+                <button class="categoria" data-categoria="Terror">Terror</button>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="assets/js/dashboard-diego.js"></script>
+</body>
+</html>
