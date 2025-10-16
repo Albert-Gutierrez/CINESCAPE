@@ -3,120 +3,120 @@
     "titulo": "Mission: Impossible – Dead Reckoning",
     "anio": "2023",
     "categoria": "Acción",
-    "imagen": "img/Mission_impossible.jpg"
+    "imagen": "assets/img/Mission_impossible.jpg"
   },
   {
     "titulo": "Talk to Me",
     "anio": "2023",
     "categoria": "Terror",
-    "imagen": "img/talk to me.jpg"
+    "imagen": "assets/img/talk to me.jpg"
   },
   {
     "titulo": "A Través de Mi Ventana",
     "anio": "2023",
     "categoria": "Romance",
-    "imagen": "img/a traves de mi ventana.jpg"
+    "imagen": "assets/img/a traves de mi ventana.jpg"
   },
   {
     "titulo": "Venom: Let There Be Carnage",
     "anio": "2023",
     "categoria": "Acción",
-    "imagen": "img/venom.jpg"
+    "imagen": "assets/img/venom.jpg"
   },
   {
     "titulo": "Extraction 2",
     "anio": "2023",
     "categoria": "Acción",
-    "imagen": "img/extraction.jpg"
+    "imagen": "assets/img/extraction.jpg"
   },
   {
     "titulo": "Argylle",
     "anio": "2024",
     "categoria": "Acción",
-    "imagen": "img/argylle.jpg"
+    "imagen": "assets/img/argylle.jpg"
   },
   {
     "titulo": "La Primera Profecía",
     "anio": "2024",
     "categoria": "Terror",
-    "imagen": "img/la_primera_profesia.jpg"
+    "imagen": "assets/img/la_primera_profesia.jpg"
   },
   {
     "titulo": "The Night Fury",
     "anio": "2025",
     "categoria": "Acción",
-    "imagen": "img/the night fury.jpg"
+    "imagen": "assets/img/the night fury.jpg"
   },
   {
     "titulo": "Mala Influencia",
     "anio": "2024",
     "categoria": "Romance",
-    "imagen": "img/mala influencia.jpg"
+    "imagen": "assets/img/mala influencia.jpg"
   },
   {
     "titulo": "Avatar: The Way of Water",
     "anio": "2022",
     "categoria": "Acción",
-    "imagen": "img/avatar.png"
+    "imagen": "assets/img/avatar.png"
   },
   {
     "titulo": "The Notebook",
     "anio": "2004",
     "categoria": "Romance",
-    "imagen": "img/the nothebook.jpg"
+    "imagen": "assets/img/the nothebook.jpg"
   },
   {
     "titulo": "The Conjuring",
     "anio": "2013",
     "categoria": "Terror",
-    "imagen": "img/the conjuring.jpg"
+    "imagen": "assets/img/the conjuring.jpg"
   },
   {
     "titulo": "Fast & Furious 10",
     "anio": "2023",
     "categoria": "Acción",
-    "imagen": "img/fast and furious.jpg"
+    "imagen": "assets/img/fast and furious.jpg"
   },
   {
     "titulo": "Titanic",
     "anio": "1997",
     "categoria": "Romance",
-    "imagen": "img/titanic.jpg"
+    "imagen": "assets/img/titanic.jpg"
   },
   {
     "titulo": "It",
     "anio": "2017",
     "categoria": "Terror",
-    "imagen": "img/it eso.jpg"
+    "imagen": "assets/img/it eso.jpg"
   },
   {
     "titulo": "John Wick 4",
     "anio": "2023",
     "categoria": "Acción",
-    "imagen": "img/jhon.jpg"
+    "imagen": "assets/img/jhon.jpg"
   },
   {
     "titulo": "Annabelle",
     "anio": "2014",
     "categoria": "Terror",
-    "imagen": "img/anabelle.jpg"
+    "imagen": "assets/img/anabelle.jpg"
   },
   {
     "titulo": "The Fault in Our Stars",
     "anio": "2014",
     "categoria": "Romance",
-    "imagen": "img/thr faul.jpg"
+    "imagen": "assets/img/thr faul.jpg"
   },
   {
     "titulo": "Oppenheimer",
     "anio": "2023",
     "categoria": "Acción",
-    "imagen": "img/oppen.jpg"
+    "imagen": "assets/img/oppen.jpg"
   },
   {
     "titulo": "The Nun II",
     "anio": "2023",
     "categoria": "Terror",
-    "imagen": "img/the nun.jpg"
+    "imagen": "assets/img/the nun.jpg"
   }
 ]
