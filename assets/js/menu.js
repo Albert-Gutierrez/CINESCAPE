@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const btnMenu = document.getElementById("btnMenu"); 
     const menuLateral = document.getElementById("menuLateral"); 
-    const enlaces = document.querySelectorAll(".menu-opciones a"); // enlaces internos
 
     // esta funcion es para abrir el menu
     btnMenu.addEventListener("click", () => {
