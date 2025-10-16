@@ -111,12 +111,4 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.classList.remove("activo");
         });
     }
-
-    // CERRAR MODAL HACIENDO CLICK FUERA
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.classList.remove("activo");
-        }
-    });
-
 });
