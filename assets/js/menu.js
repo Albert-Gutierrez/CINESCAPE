@@ -18,18 +18,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    //CERRAR MENÚ AL ELEGIR UNA OPCIÓN
-    enlaces.forEach((link) => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault(); // evita recargar página
-            const categoria = e.target.dataset.categoria;
-            console.log(`Categoría seleccionada: ${categoria}`);
-
-            // Aquí puedes comunicarte con Diego (dashboard.js)
-            // para filtrar las películas por categoría
-            // Ejemplo: filtrarPeliculasPorCategoria(categoria);
-
-            menuLateral.classList.remove("activo");
-        });
-    });
 });

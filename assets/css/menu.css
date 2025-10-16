@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .menu-lateral {
-    width: 30%;
+    width: 50%;
     text-align: right;
     position: fixed;
     top: 0;
-    right: -100%; /* oculto por defecto */
+    right: -50%; /* oculto por defecto */
     height: 100vh;
     background-color: #18181B;
     color: #fff;
@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 32px 24px;
+    padding: 88px 23px 6px 30px;
     overflow-y: auto;
     animation: fadeIn 0.5s ease;
 }
@@ -36,17 +36,17 @@
 /* encabezado */
 .menu-contenido h3 {
     text-align: right;
-    font-size: 21px;
-    color: #1D9BBB;    /* azul principal */
+    font-size: 18px;
+    color: #1D9BBB;
     margin-bottom: 32px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* opciones principales */
 .menu-opciones {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 83px 23px 6px 13px;
     flex: 1;
 }
 
