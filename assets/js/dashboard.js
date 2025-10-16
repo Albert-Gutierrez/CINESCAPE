@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 (p.nombre || "").toString().toLowerCase().includes(texto)
             );
             mostrarPeliculas(filtradas);
-            backButton.style.display = "block";  // Muestra botón "volver"
+            backButton.style.display = "block";  
         });
     }
 
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const categoria = boton.dataset.categoria; //Obtiene la categoría del atributo data-categoria del HTML
             const filtradas = peliculas.filter(p => (p.categoria || "").toLowerCase() === (categoria || "").toLowerCase());
             mostrarPeliculas(filtradas);
-            backButton.style.display = "block";
+            backButton.style.display = "block"; // Muestra botón "volver"
         });
     });
 
